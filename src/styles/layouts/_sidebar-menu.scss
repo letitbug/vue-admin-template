@@ -1,0 +1,32 @@
+.va-side-bar {
+  height: 100%;
+  color: $sidebar-color;
+  background-color: $sidebar-bg-color;
+  background-image: $sidebar-bg-image;
+
+  position: absolute;
+  z-index: $z-index-sidebar;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  transition-property: width, margin;
+  transition-duration: $transition-duration;
+  transition-timing-function: ease-out;
+}
+
+.va-side-backdrop {
+  position: absolute;
+  z-index: $z-index-sidebar-backdrop;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $color-overlay;
+}
+
+@media screen and (min-width: $device-md) {
+  .va-side-backdrop {
+    display: none;
+  }
+}

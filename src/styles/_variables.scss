@@ -2,8 +2,17 @@
 // System scss variables
 
 @import "variables/constants";
-@import "variables/bar-menu";
 @import "variables/bar-head";
 @import "variables/bar-tab";
 @import "variables/bar-foot";
 @import "variables/main";
+
+
+//
+// About sidebar
+$sidebar-width-collapse:        60px;
+$sidebar-width-expanded:        206px;
+$sidebar-bg-color:              $color-indigo-dark;
+$sidebar-bg-image:              linear-gradient($color-indigo-dark , $color-indigo-darken);
+$sidebar-color:                 $color-gray-300;
+$sidebar-color-active:          $color-white;

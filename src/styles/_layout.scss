@@ -1,0 +1,60 @@
+@import "layouts/sidebar-menu";
+
+.va-app-wrapper {
+  height:   100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.va-main-wrapper {
+  height:     100%;
+  overflow:   hidden;
+  position:   relative;
+  transition: $transition-padding;
+}
+
+.va-app-wrapper {
+  &.desktop {
+    &.sidebar-expanded {
+      .va-main-wrapper {
+        padding-left: $sidebar-width-expanded;
+      }
+
+      .va-side-bar {
+        width: $sidebar-width-expanded;
+      }
+    }
+
+    &.sidebar-collapse {
+      .va-main-wrapper {
+        padding-left: $sidebar-width-collapse;
+      }
+
+      .va-side-bar {
+        width: $sidebar-width-collapse;
+      }
+    }
+  }
+
+  &.mobile {
+    &.sidebar-expanded {
+      .va-main-wrapper {
+        padding-left: $sidebar-width-expanded;
+      }
+    }
+
+    &.sidebar-collapse {
+      .va-main-wrapper {
+        padding-left: 0;
+      }
+
+      .va-side-bar {
+        margin-left: -$sidebar-width-expanded;
+      }
+    }
+
+    .va-side-bar {
+      width: $sidebar-width-expanded;
+    }
+  }
+}

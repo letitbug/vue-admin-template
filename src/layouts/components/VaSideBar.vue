@@ -1,5 +1,5 @@
 <template>
-  <div class="va-menu-bar"></div>
+  <div class="va-side-bar"></div>
 </template>
 
 <script>
