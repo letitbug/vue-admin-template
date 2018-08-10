@@ -1,0 +1,26 @@
+*,
+*:before,
+*::before,
+*:after,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  overflow: hidden;
+}
+
+html {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  color: $color-text-primary;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: $color-gray-200;
+}

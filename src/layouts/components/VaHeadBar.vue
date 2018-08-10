@@ -1,11 +1,9 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+  <div class="va-head-bar"></div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'VaHeadBar'
 }
 </script>

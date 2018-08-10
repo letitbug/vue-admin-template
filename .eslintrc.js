@@ -34,6 +34,7 @@ module.exports = {
   },
   // add your custom rules here
   rules: {
+    'max-len': [2, 120, 4, { 'ignoreUrls': true }],
     'accessor-pairs': 2,
     'array-bracket-spacing': [2, 'never'],
     'arrow-spacing': [2, {
