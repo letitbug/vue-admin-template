@@ -10,9 +10,7 @@
   top: 0;
   bottom: 0;
 
-  transition-property: width, margin;
-  transition-duration: $transition-duration;
-  transition-timing-function: ease-out;
+  transition: $transition-width, $transition-margin;
 }
 
 .va-side-backdrop {
