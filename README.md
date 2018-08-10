@@ -1,4 +1,4 @@
-# vue-admin-template
+# vue-admin-template  [![Build Status](https://travis-ci.org/letitbug/vue-admin-template.svg?branch=master)](https://travis-ci.org/letitbug/vue-admin-template)
 
 > A admin template based on vue2 and element-ui.
 
