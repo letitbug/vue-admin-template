@@ -3,6 +3,7 @@
 import Vue from 'vue'
 
 import 'normalize.css'
+import '@/styles/va.core.scss'
 
 import App from './App'
 import router from './router'
