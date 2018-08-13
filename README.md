@@ -1,6 +1,6 @@
-# vue-admin-template  [![Build Status](https://www.travis-ci.org/letsbug/vue-admin-template.svg?branch=master)](https://www.travis-ci.org/letsbug/vue-admin-template)
+# vava-mini  [![Build Status](https://travis-ci.org/letsbug/vava-mini.svg?branch=master)](https://travis-ci.org/letsbug/vava-mini)
 
-> A admin template based on vue2 and element-ui.
+> A minimal admin template, based on vue2 and element-ui.
 
 ## Build Setup
 
