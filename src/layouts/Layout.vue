@@ -1,45 +1,32 @@
 <template>
-  <div class="va-app-wrapper" :class="device+ ' ' + sidebarStatus ">
+  <div class="va-app-wrapper" :class="device + ' ' + sidebarStatus">
     <va-side-bar></va-side-bar>
-    <div class="va-side-backdrop"></div>
+    <div class="va-side-backdrop" @click.prevent="closeSidebar"></div>
     <div class="va-main-wrapper">
-      <el-button @click="toggleDevice">toggle device</el-button>
-      <el-button type="primary" @click="toggleDevice">toggle device</el-button>
-      <el-button type="success" @click="toggleDevice">toggle device</el-button>
-      <el-button type="warning" @click="toggleDevice">toggle device</el-button>
-      <el-button type="danger" @click="toggleDevice">toggle device</el-button>
-      <el-button type="info" @click="toggleDevice">toggle device</el-button>
-      <br>
-      <br>
-      <el-button @click="toggleSidebar">toggle sidebar</el-button>
-      <el-button type="primary" plain @click="toggleSidebar">toggle device</el-button>
-      <el-button type="success" plain @click="toggleSidebar">toggle device</el-button>
-      <el-button type="warning" plain @click="toggleSidebar">toggle device</el-button>
-      <el-button type="danger" plain @click="toggleSidebar">toggle device</el-button>
-      <el-button type="info" plain @click="toggleSidebar">toggle device</el-button>
+      <va-head-bar></va-head-bar>
+      <va-tabs-bar></va-tabs-bar>
+      <app-body></app-body>
+      <va-foot-bar></va-foot-bar>
     </div>
   </div>
 </template>
 
 <script>
-import { VaSideBar, VaHeadBar, VaTabsBar, VaBreadcrumb, VaFootBar, VaAppBody } from './components'
+import { VaSideBar, VaHeadBar, VaTabsBar, VaFootBar,Breadcrumb,  AppBody } from './components'
+import SidebarResizeHandler from '@/mixins/SidebarResizeHandler'
 
 export default {
   name: 'Layout',
-  components: { VaSideBar, VaHeadBar, VaTabsBar, VaBreadcrumb, VaFootBar, VaAppBody },
-  data() {
-    return {
-      sidebarStatus: 'sidebar-expanded',
-      device: 'desktop'
-    }
+  components: { VaSideBar, VaHeadBar, VaTabsBar, VaFootBar, Breadcrumb, AppBody },
+  mixins: [SidebarResizeHandler],
+  computed: {
+    sidebarOpened() { return this.$store.state.application.sidebar.opened },
+    sidebarStatus() { return 'sidebar-' + (this.sidebarOpened ? 'expanded' : 'collapse') },
+    device() { return this.$store.state.application.device }
   },
   methods: {
-    toggleDevice() {
-      this.device = this.device === 'desktop' ? 'mobile' : 'desktop'
-    },
-    toggleSidebar() {
-      this.sidebarStatus = this.sidebarStatus === 'sidebar-expanded' ? 'sidebar-collapse' : 'sidebar-expanded'
-    }
+    toggleDevice() { this.device = this.device === 'desktop' ? 'mobile' : 'desktop' },
+    closeSidebar() { this.$store.dispatch('app_sidebar_close') }
   }
 }
 </script>

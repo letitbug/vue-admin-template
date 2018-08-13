@@ -1,9 +1,9 @@
 <template>
-  <div class="va-side-bar"></div>
+  <div class="va-sidebar"></div>
 </template>
 
 <script>
 export default {
-  name: 'VaMenuBar'
+  name: 'VaSideBar'
 }
 </script>

@@ -5,7 +5,12 @@ export const constantRouteMap = [
   {
     path: '/',
     component: Layout,
-    children: []
+    redirect: 'dashboard',
+    children: [{
+      path: 'dashboard',
+      name: 'Dashboard',
+      component: () => import('@/modules/dashboard/Dashboard')
+    }]
   }
 ]
 

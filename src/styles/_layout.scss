@@ -10,7 +10,7 @@
   height:     100%;
   overflow:   hidden;
   position:   relative;
-  transition: $transition-padding;
+  transition: $transition-padding, $transition-transform;
 }
 
 .va-app-wrapper {
@@ -20,7 +20,7 @@
         padding-left: $sidebar-width-expanded;
       }
 
-      .va-side-bar {
+      .va-sidebar {
         width: $sidebar-width-expanded;
       }
     }
@@ -30,31 +30,44 @@
         padding-left: $sidebar-width-collapse;
       }
 
-      .va-side-bar {
+      .va-sidebar {
         width: $sidebar-width-collapse;
       }
     }
   }
 
   &.mobile {
+    .va-sidebar {
+      width: $sidebar-width-expanded;
+    }
+    .va-main-wrapper {
+      padding-left: 0;
+    }
+
     &.sidebar-expanded {
+      .va-sidebar {
+        transform: translate(0, 0);
+      }
       .va-main-wrapper {
-        padding-left: $sidebar-width-expanded;
+        transform: translate($sidebar-width-expanded/2, 0);
+      }
+      .va-side-backdrop {
+        visibility: visible;
+        opacity: 1;
       }
     }
 
     &.sidebar-collapse {
+      .va-sidebar {
+        transform: translate(-$sidebar-width-expanded, 0);
+      }
       .va-main-wrapper {
-        padding-left: 0;
+        transform: translate(0, 0);
       }
-
-      .va-side-bar {
-        margin-left: -$sidebar-width-expanded;
+      .va-side-backdrop {
+        visibility: hidden;
+        opacity: 0;
       }
-    }
-
-    .va-side-bar {
-      width: $sidebar-width-expanded;
     }
   }
 }

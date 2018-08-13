@@ -1,9 +1,9 @@
 <template>
-  <div class="va-app-body"></div>
+  <div class="va-breadcrumb"></div>
 </template>
 
 <script>
 export default {
-  name: 'VaAppBody'
+  name: 'Breadcrumb'
 }
 </script>
