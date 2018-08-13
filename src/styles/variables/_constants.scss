@@ -31,6 +31,9 @@ $theme-green:         $color-green !default;
 $theme-blue:          $color-blue !default;
 
 $color-theme:           $theme-pink;
+
+$color-line:            $color-gray-200 !default;
+
 $color-link:            $color-blue;
 $color-text-primary:    $color-gray-800;
 $color-text-secondary:  $color-gray-600;
@@ -74,9 +77,8 @@ $device-xl:           1200px !default;
 
 // Lines, Borders
 $line-width:          1px !default;
-$line-color:          $color-gray-200 !default;
 
-$border-default:      solid $line-width $line-color !default;
+$border-default:      solid $line-width $color-line !default;
 $border-actived:      solid $line-width $color-theme !default;
 
 
