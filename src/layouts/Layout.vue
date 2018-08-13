@@ -20,7 +20,11 @@ export default {
   components: { VaSideBar, VaHeadBar, VaTabsBar, VaFootBar, Breadcrumb, AppBody },
   mixins: [SidebarResizeHandler],
   computed: {
-    sidebarOpened() { return this.$store.state.application.sidebar.opened },
+    sidebarOpened() {
+      const opened = this.$store.state.application.sidebar.opened
+      console.log(opened)
+      return opened
+    },
     sidebarStatus() { return 'sidebar-' + (this.sidebarOpened ? 'expanded' : 'collapse') },
     device() { return this.$store.state.application.device }
   },

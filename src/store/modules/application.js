@@ -5,22 +5,20 @@ const application = {
     language: Cookie.get('language') || 'zh-cmn-Hans',
     device: 'desktop',
     sidebar: {
-      opened: !+Cookie.get('sidebar_status'),
-      withoutAnimation: true
+      opened: !+Cookie.get('sidebar_status')
     }
   },
   mutations: {
     APP_SIDEBAR_TOGGLE: state => {
-      Cookie.set('sidebar_status', state.sidebar.opened ? 0 : 1)
+      Cookie.set('sidebar_status', state.sidebar.opened ? 1 : 0)
       state.sidebar.opened = !state.sidebar.opened
-      state.sidebar.withoutAnimation = true
     },
     APP_SIDEBAR_OPEN: state => {
-      Cookie.set('sidebar_status', 1)
+      Cookie.set('sidebar_status', 0)
       state.sidebar.opened = true
     },
     APP_SIDEBAR_CLOSE: state => {
-      Cookie.set('sidebar_status', 0)
+      Cookie.set('sidebar_status', 1)
       state.sidebar.opened = false
     },
     APP_DEVICE_TOGGLE: (state, device) => {

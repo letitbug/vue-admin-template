@@ -12,7 +12,7 @@ const WIDTH = 768
 export default {
   watch: {
     $route() {
-      // Auto close sidebar in mobile device
+      // In mobile devices, auto close the sidebar when route jump.
       if (this.isMobile() && this.sidebarOpened) store.dispatch('app_sidebar_close')
     }
   },
@@ -34,7 +34,9 @@ export default {
       const isMobile = this.isMobile()
       store.dispatch('app_device_toggle', isMobile ? 'mobile' : 'desktop')
 
-      if (isMobile) store.dispatch('app_sidebar_close')
+      if (isMobile) {
+        store.dispatch('app_sidebar_close')
+      }
       // else store.dispatch('app_sidebar_open')
     }
   }
