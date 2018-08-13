@@ -26,11 +26,11 @@ $color-indigo-dark:   #363a5d !default;
 $color-indigo-darken: #2a2d44 !default;
 
 // Theme colors
-$theme-pink:          $color-pink !default;
-$theme-green:         $color-green !default;
-$theme-blue:          $color-blue !default;
+$color-theme-pink:      $color-pink !default;
+$color-theme-green:     $color-green !default;
+$color-theme-blue:      $color-blue !default;
 
-$color-theme:           $theme-pink;
+$color-theme:           $color-theme-pink;
 
 $color-line:            $color-gray-200 !default;
 

@@ -3,10 +3,20 @@
     <va-side-bar></va-side-bar>
     <div class="va-side-backdrop"></div>
     <div class="va-main-wrapper">
-      <button @click="toggleDevice">toggle device</button>
+      <el-button @click="toggleDevice">toggle device</el-button>
+      <el-button type="primary" @click="toggleDevice">toggle device</el-button>
+      <el-button type="success" @click="toggleDevice">toggle device</el-button>
+      <el-button type="warning" @click="toggleDevice">toggle device</el-button>
+      <el-button type="danger" @click="toggleDevice">toggle device</el-button>
+      <el-button type="info" @click="toggleDevice">toggle device</el-button>
       <br>
       <br>
-      <button @click="toggleSidebar">toggle sidebar</button>
+      <el-button @click="toggleSidebar">toggle sidebar</el-button>
+      <el-button type="primary" plain @click="toggleSidebar">toggle device</el-button>
+      <el-button type="success" plain @click="toggleSidebar">toggle device</el-button>
+      <el-button type="warning" plain @click="toggleSidebar">toggle device</el-button>
+      <el-button type="danger" plain @click="toggleSidebar">toggle device</el-button>
+      <el-button type="info" plain @click="toggleSidebar">toggle device</el-button>
     </div>
   </div>
 </template>
