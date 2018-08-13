@@ -15,6 +15,8 @@ $sidebar-bg-image:              linear-gradient($color-indigo-dark , $color-indi
 $sidebar-color:                 $color-gray-300;
 $sidebar-color-active:          $color-white;
 
+$sidebar-brand-padding:         $spacer-base;
+
 
 //
 // About head bar
@@ -31,6 +33,6 @@ $head-nav-item-border-width:    2px;
 $head-nav-item-border:          solid $head-nav-item-border-width transparent;
 $head-nav-item-border-hover:    solid $head-nav-item-border-width $color-theme;
 
-$head-nav-font-size:            $font-size-lg * 1.1;
+$head-nav-font-size:            $font-size-h3;
 
 $head-bg-color:                 $color-white;

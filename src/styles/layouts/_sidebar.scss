@@ -27,6 +27,17 @@
   transition: $transition-opacity;
 }
 
+.va-side-brand {
+  padding: $sidebar-brand-padding;
+  text-align: center;
+  font-size: $font-size-lg;
+
+  .brand-logo {
+    width: 56px;
+    height: 56px;
+  }
+}
+
 .va-sidebar-menu {
 
 }
