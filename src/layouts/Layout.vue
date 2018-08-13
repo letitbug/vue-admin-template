@@ -1,13 +1,13 @@
 <template>
   <div class="va-app-wrapper" :class="device + ' ' + sidebarStatus">
     <va-side-bar></va-side-bar>
-    <div class="va-side-backdrop" @click.prevent="closeSidebar"></div>
     <div class="va-main-wrapper">
       <va-head-bar></va-head-bar>
       <va-tabs-bar></va-tabs-bar>
       <app-body></app-body>
       <va-foot-bar></va-foot-bar>
     </div>
+    <div class="va-side-backdrop" @click.prevent="closeSidebar"></div>
   </div>
 </template>
 

@@ -15,15 +15,20 @@
 }
 
 .va-side-backdrop {
+  background-color: $color-overlay;
+
   position: absolute;
   z-index: $z-index-sidebar-backdrop;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $color-overlay;
 
   transition: $transition-opacity;
+}
+
+.va-sidebar-menu {
+
 }
 
 @media screen and (min-width: $device-md) {

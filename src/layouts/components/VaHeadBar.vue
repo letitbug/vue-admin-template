@@ -1,20 +1,21 @@
 <template>
   <div class="va-head-bar">
-    <br>
-    <el-button @click="toggleSidebar">toggle sidebar</el-button>
-    <el-button type="primary" plain @click="toggleSidebar">toggle sidebar</el-button>
-    <el-button type="success" plain @click="toggleSidebar">toggle sidebar</el-button>
-    <el-button type="warning" plain @click="toggleSidebar">toggle sidebar</el-button>
-    <el-button type="danger" plain @click="toggleSidebar">toggle sidebar</el-button>
-    <el-button type="info" plain @click="toggleSidebar">toggle sidebar</el-button>
+    <ul class="va-head-nav">
+      <li class="va-nav-item" @click.stop="toggleSidebar">
+        <svg class="va-icon" aria-hidden="true"><use
+          :xlink:href="sidebarOpend ? '#if-handle-close' : '#if-handle-expand'"></use></svg>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
 export default {
   name: 'VaHeadBar',
+  computed: {
+    sidebarOpend() { return this.$store.state.application.sidebar.opened }
+  },
   methods: {
-    toggleDevice() { this.$store.dispatch('app_device_toggle') },
     toggleSidebar() { this.$store.dispatch('app_sidebar_toggle') }
   }
 }
