@@ -1,4 +1,4 @@
-@import "layouts/sidebar-menu";
+@import "layouts/sidebar";
 
 .va-app-wrapper {
   height:   100%;
@@ -13,8 +13,8 @@
   transition: $transition-padding, $transition-transform;
 }
 
-.va-app-wrapper {
-  &.desktop {
+@media screen and (min-width: $device-md) {
+  .va-app-wrapper {
     &.sidebar-expanded {
       .va-main-wrapper {
         padding-left: $sidebar-width-expanded;
@@ -35,8 +35,10 @@
       }
     }
   }
+}
 
-  &.mobile {
+@media screen and (max-width: $device-md) {
+  .va-app-wrapper {
     .va-sidebar {
       width: $sidebar-width-expanded;
     }

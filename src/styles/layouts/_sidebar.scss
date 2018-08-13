@@ -1,5 +1,6 @@
 .va-sidebar {
   height: 100%;
+  overflow: hidden;
   color: $sidebar-color;
   background-color: $sidebar-bg-color;
   background-image: $sidebar-bg-image;
@@ -12,8 +13,6 @@
 
   transition: $transition-width, $transition-transform;
 }
-
-.va-sidebar-wrapper {}
 
 .va-side-backdrop {
   position: absolute;
