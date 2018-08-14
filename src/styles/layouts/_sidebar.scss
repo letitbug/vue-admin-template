@@ -28,13 +28,26 @@
 }
 
 .va-side-brand {
-  padding: $sidebar-brand-padding;
+  height: auto;
+  padding: $sidebar-brand-padding-default;
   text-align: center;
-  font-size: $font-size-lg;
+  font-size: $font-size-h5;
+  transition: $transition-padding, $transition-height;
 
   .brand-logo {
-    width: 56px;
-    height: 56px;
+    width: $sidebar-brand-size-default;
+    height: $sidebar-brand-size-default;
+    transition: $transition-width, $transition-height;
+  }
+
+  .brand-name {
+    height: $sidebar-brand-name-height;
+    line-height: $sidebar-brand-name-height;
+    white-space: nowrap;
+    padding: 0 10px;
+    background-color: $sidebar-brand-name-bg;
+    border-radius: $sidebar-brand-name-height/2;
+    margin-top: $spacer-sm;
   }
 }
 
