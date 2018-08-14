@@ -4,10 +4,15 @@
   line-height: $head-line-height;
   background-color: $head-bg-color;
   border-bottom: $head-border;
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: $z-index-header;
 }
 
 .va-head-nav {
+  display: inline-block;
   height: $head-nav-height;
   line-height: $head-nav-line-height;
   list-style: none;

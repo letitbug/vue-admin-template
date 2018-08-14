@@ -42,3 +42,34 @@ $head-nav-item-border-hover:    solid $head-nav-item-border-width $color-theme;
 $head-nav-font-size:            $font-size-h3;
 
 $head-bg-color:                 $color-white;
+
+
+//
+// About tabs bar
+$tabs-border:                   $border-default;
+$tabs-bg-color:                 $color-white;
+
+$tabs-height:                   40px;
+$tabs-line-height:              $tabs-height;
+
+$tabs-wrapper-padding:          0 $spacer-base;
+
+
+//
+// About foot bar
+$foot-border:                   $border-default;
+$foot-bg-color:                 $color-white;
+
+$foot-height:                   50px;
+$foot-line-height:              $foot-height;
+
+$foot-wrapper-padding:          0 $spacer-base;
+
+
+//
+// App wrapper vars
+$main-wrapper-padding-top:      $head-height + $tabs-height;
+$main-wrapper-padding-bottom:   $foot-height;
+
+$body-wrapper-padding:          $spacer-base;
+$body-wrapper-bg-color:         $color-white;

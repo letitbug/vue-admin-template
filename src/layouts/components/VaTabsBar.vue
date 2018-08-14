@@ -1,5 +1,7 @@
 <template>
-  <div class="va-tabs-bar"></div>
+  <div class="va-tabs-bar">
+    App route tabs component.
+  </div>
 </template>
 
 <script>

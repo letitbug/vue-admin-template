@@ -1,5 +1,7 @@
 <template>
-  <div class="va-foot-bar"></div>
+  <div class="va-foot-bar">
+    App foot bar.
+  </div>
 </template>
 
 <script>

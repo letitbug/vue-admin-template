@@ -110,10 +110,10 @@ $shadow-lg-size:            .6rem!default;
 
 // vertical shadows
 $shadow-sm-vr:              0 $shadow-sm-offset $shadow-sm-size $shadow-color-base;
-$shadow-sm-vr-inverse:      0 -$shadow-sm-offset $shadow-sm-size $shadow-color-base;
+$shadow-sm-vr-inverse:      0 (-$shadow-sm-offset) $shadow-sm-size $shadow-color-base;
 // horizontal shadows
 $shadow-sm-hr:              $shadow-sm-offset 0 $shadow-sm-size $shadow-color-base;
-$shadow-sm-hr-inverse:      -$shadow-sm-offset 0 $shadow-sm-size $shadow-color-base;
+$shadow-sm-hr-inverse:      (-$shadow-sm-offset) 0 $shadow-sm-size $shadow-color-base;
 
 
 // Transitions
