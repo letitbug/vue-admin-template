@@ -31,6 +31,8 @@
   }
 }
 
+//
+// In desktop
 @media screen and (min-width: $device-md) {
   .va-app-wrapper {
     &.sidebar-expanded {
@@ -43,6 +45,7 @@
       }
     }
 
+    // sidebar collapsed.
     &.sidebar-collapse {
       .va-main-wrapper {
         margin-left: $sidebar-width-collapse;
@@ -66,6 +69,26 @@
       .va-sidebar {
         width: $sidebar-width-collapse;
         padding-top: $sidebar-brand-height-collapse;
+      }
+
+      .va-side-menu {
+        > li {
+          padding: 0;
+        }
+
+        .menu-item {
+          padding: 0;
+          border-radius: 0;
+          text-align: center;
+
+          .va-icon {
+            margin: 0;
+          }
+
+          .item-name {
+            display: none;
+          }
+        }
       }
     }
   }

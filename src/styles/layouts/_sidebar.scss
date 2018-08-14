@@ -64,13 +64,17 @@
 
 .va-side-main {
   height: 100%;
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
+  //overflow-x: hidden;
+  //overflow-y: scroll;
+  //-webkit-overflow-scrolling: touch;
 }
 
 .va-side-title {
-  padding: $sidebar-menus-padding-y $sidebar-menus-padding-x;
+  margin-top: $sidebar-title-margin-top;
+  margin-bottom: $sidebar-title-margin-bottom;
+  padding: 0 $sidebar-title-padding-x;
   font-weight: 500;
+  transition: $transition-height;
 }
 
 .va-side-menu {
@@ -78,10 +82,34 @@
   padding: 0;
   margin: 0;
 
+  > li {
+    padding: 0 0 0 $sidebar-menus-padding-x;
+    position: relative;
+  }
+
   .menu-item {
-    padding: $sidebar-menus-padding-y $sidebar-menus-padding-x;
+    display: block;
+    padding: 0 $sidebar-menus-link-padding-x;
+    margin: $sidebar-menus-space 0;
+    //margin-right: -$scrollbar-width;
+    color: $sidebar-color;
+    text-decoration: none;
     line-height: $sidebar-menus-line-height;
+    border-top-left-radius: $sidebar-menus-line-height/2;
+    border-bottom-left-radius: $sidebar-menus-line-height/2;
     white-space: nowrap;
+
+    &:hover {
+      color: $sidebar-color-active;
+    }
+
+    &.active {
+      background-color: $sidebar-menus-link-active-bg;
+
+      .va-icon {
+        color: $color-cyan;
+      }
+    }
 
     .va-icon {
       width: $font-size-lg;

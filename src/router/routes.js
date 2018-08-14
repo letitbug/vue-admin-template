@@ -13,11 +13,19 @@ export const constantRouteMap = [
     }]
   },
   {
-    path: '/others',
+    path: '/report',
     component: Layout,
-    redirect: '/others',
+    redirect: '/report',
     children: [
-      { path: '', name: 'Others', component: () => import('@/modules/others/Others') }
+      { path: '', name: 'Reports', component: () => import('@/modules/reports/Reports') }
+    ]
+  },
+  {
+    path: '/table',
+    component: Layout,
+    redirect: '/table',
+    children: [
+      { path: '', name: 'Table', component: () => import('@/modules/table/Table') }
     ]
   },
   { path: '*', redirect: '/error', hidden: true }

@@ -1,11 +1,11 @@
 <template>
 <div class="va-body-container">
-  Others
+  Tables
 </div>
 </template>
 
 <script>
 export default {
-  name: 'Others'
+  name: 'Table'
 }
 </script>

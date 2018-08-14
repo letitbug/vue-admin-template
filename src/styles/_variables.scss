@@ -29,12 +29,17 @@ $sidebar-brand-padding-default:   $spacer-sm $spacer-lg;
 $sidebar-brand-padding-collapsed: $spacer-xxs $spacer-sm;
 $sidebar-brand-size-default:      56px;
 $sidebar-brand-size-collapse:     40px;
-$sidebar-brand-name-bg:           lighten($sidebar-bg-color, 4.5%);
+$sidebar-brand-name-bg:           $color-indigo-light;
 $sidebar-brand-name-height:       30px;
 
-$sidebar-menus-padding-y:         0;
-$sidebar-menus-padding-x:         $spacer-xl;
+$sidebar-title-padding-x:         $spacer-xl;
+$sidebar-title-margin-top:        $spacer-xxl;
+$sidebar-title-margin-bottom:     $spacer-lg;
+$sidebar-menus-padding-x:         $spacer-lg;
+$sidebar-menus-space:             $spacer-sm;
 $sidebar-menus-line-height:       30px;
+$sidebar-menus-link-padding-x:    $spacer-sm;
+$sidebar-menus-link-active-bg:    $color-indigo-darkness;
 
 
 //
