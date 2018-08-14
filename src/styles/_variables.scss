@@ -8,10 +8,8 @@
 // About sidebar
 $sidebar-width-collapse:        60px;
 $sidebar-width-expanded:        206px;
-
 $sidebar-bg-color:              $color-indigo-dark;
 $sidebar-bg-image:              linear-gradient($color-indigo-dark , $color-indigo-darken);
-
 $sidebar-color:                 $color-gray-300;
 $sidebar-color-active:          $color-white;
 
@@ -19,7 +17,6 @@ $sidebar-brand-padding-default:   $spacer-sm $spacer-lg;
 $sidebar-brand-padding-collapsed: $spacer-xxs $spacer-sm;
 $sidebar-brand-size-default:      56px;
 $sidebar-brand-size-collapse:     40px;
-
 $sidebar-brand-name-bg:           lighten($sidebar-bg-color, 4.5%);
 $sidebar-brand-name-height:       30px;
 
@@ -27,31 +24,26 @@ $sidebar-brand-name-height:       30px;
 //
 // About head bar
 $head-border:                   $border-default;
-
 $head-height:                   50px;
 $head-line-height:              $head-height - $border-default-width;
+$head-bg-color:                 $color-white;
 
 $head-nav-height:               $head-line-height;
 $head-nav-line-height:          $head-nav-height;
-
 $head-nav-item-padding:         0 $spacer-base;
 $head-nav-item-border-width:    2px;
 $head-nav-item-border:          solid $head-nav-item-border-width transparent;
 $head-nav-item-border-hover:    solid $head-nav-item-border-width $color-theme;
-
 $head-nav-font-size:            $font-size-h3;
 
-$head-bg-color:                 $color-white;
 
 
 //
 // About tabs bar
 $tabs-border:                   $border-default;
 $tabs-bg-color:                 $color-white;
-
 $tabs-height:                   40px;
 $tabs-line-height:              $tabs-height;
-
 $tabs-wrapper-padding:          0 $spacer-base;
 
 
@@ -59,11 +51,11 @@ $tabs-wrapper-padding:          0 $spacer-base;
 // About foot bar
 $foot-border:                   $border-default;
 $foot-bg-color:                 $color-white;
-
-$foot-height:                   50px;
-$foot-line-height:              $foot-height;
-
-$foot-wrapper-padding:          0 $spacer-base;
+$foot-padding-y:                $spacer-sm;
+$foot-padding-x:                $spacer-base;
+$foot-wrapper-padding:          $foot-padding-y $foot-padding-x;
+$foot-height:                   50px + $border-default-width;
+$foot-line-height:              $foot-height - $border-default-width - $foot-padding-y * 2;
 
 
 //

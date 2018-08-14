@@ -1,13 +1,16 @@
 <template>
 <div class="va-error-wrapper">
   <img :src="flag" alt=""><br>
-  Router error 404
+  Router error 404 !!!
+  <va-copyright></va-copyright>
 </div>
 </template>
 
 <script>
+import VaCopyright from '@/components/copyright/VaCopyright'
 export default {
   name: 'Error',
+  components: { VaCopyright },
   data() {
     return {
       code: 404,
@@ -32,5 +35,13 @@ export default {
   padding: $spacer-base $spacer-base $spacer-xxl * 3;
   background-color: $color-white;
   text-align: center;
+  position: relative;
+
+  .va-copyright {
+    position: absolute;
+    bottom: $spacer-base;
+    left: 0;
+    right: 0;
+  }
 }
 </style>
