@@ -1,7 +1,7 @@
 <template>
-  <div>
-    Dashboard
-  </div>
+<div class="va-body-container no-bg">
+  Dashboard
+</div>
 </template>
 
 <script>
@@ -9,7 +9,3 @@ export default {
   name: 'Dashboard'
 }
 </script>
-
-<style scoped>
-
-</style>
