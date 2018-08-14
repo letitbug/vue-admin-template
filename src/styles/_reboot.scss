@@ -24,3 +24,25 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: $color-gray-200;
 }
+
+::-webkit-scrollbar {
+  width: $scrollbar-width;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $scrollbar-thumb-bg;
+  border-radius: $scrollbar-thumb-radius-size;
+  opacity: .3;
+  transition: $transition-background;
+
+  &:hover {
+    background-color: $scrollbar-thumb-bg-hover;
+  }
+}
+
+h1 { font-size: $font-size-h1 }
+h2 { font-size: $font-size-h2 }
+h3 { font-size: $font-size-h3 }
+h4 { font-size: $font-size-h4 }
+h5 { font-size: $font-size-h5 }
+h6 { font-size: $font-size-h6 }

@@ -5,14 +5,26 @@
 
 
 //
-// About sidebar
-$sidebar-width-collapse:        60px;
-$sidebar-width-expanded:        206px;
-$sidebar-bg-color:              $color-indigo-dark;
-$sidebar-bg-image:              linear-gradient($color-indigo-dark , $color-indigo-darken);
-$sidebar-color:                 $color-gray-300;
-$sidebar-color-active:          $color-white;
+// About scroll bar variables
 
+$scrollbar-width:                 6px;
+$scrollbar-bg:                    $color-gray-300;
+$scrollbar-thumb-bg:              $color-gray-400;
+$scrollbar-thumb-bg-hover:        $color-cyan;
+$scrollbar-thumb-radius-size:     3px;
+
+
+//
+// About sidebar
+$sidebar-width-collapse:          60px;
+$sidebar-width-expanded:          206px;
+$sidebar-bg-color:                $color-indigo-dark;
+$sidebar-bg-image:                linear-gradient($color-indigo-dark , $color-indigo-darken);
+$sidebar-color:                   $color-gray-300;
+$sidebar-color-active:            $color-white;
+
+$sidebar-brand-height-expanded:   120px;
+$sidebar-brand-height-collapse:   50px;
 $sidebar-brand-padding-default:   $spacer-sm $spacer-lg;
 $sidebar-brand-padding-collapsed: $spacer-xxs $spacer-sm;
 $sidebar-brand-size-default:      56px;
@@ -20,11 +32,15 @@ $sidebar-brand-size-collapse:     40px;
 $sidebar-brand-name-bg:           lighten($sidebar-bg-color, 4.5%);
 $sidebar-brand-name-height:       30px;
 
+$sidebar-menus-padding-y:         0;
+$sidebar-menus-padding-x:         $spacer-xl;
+$sidebar-menus-line-height:       30px;
+
 
 //
 // About head bar
 $head-border:                   $border-default;
-$head-height:                   50px;
+$head-height:                   $sidebar-brand-height-collapse;
 $head-line-height:              $head-height - $border-default-width;
 $head-bg-color:                 $color-white;
 

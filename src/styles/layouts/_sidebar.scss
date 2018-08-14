@@ -2,6 +2,7 @@
   height: 100%;
   overflow: hidden;
   color: $sidebar-color;
+  padding-top: $sidebar-brand-height-expanded;
   background-color: $sidebar-bg-color;
   background-image: $sidebar-bg-image;
 
@@ -11,7 +12,7 @@
   top: 0;
   bottom: 0;
 
-  transition: $transition-width, $transition-transform;
+  transition: $transition-width, $transition-padding, $transition-transform;
 }
 
 .va-side-backdrop {
@@ -28,10 +29,14 @@
 }
 
 .va-side-brand {
-  height: auto;
+  height: $sidebar-brand-height-expanded;
   padding: $sidebar-brand-padding-default;
   text-align: center;
   font-size: $font-size-h5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   transition: $transition-padding, $transition-height;
 
   .brand-logo {
@@ -44,15 +49,47 @@
     height: $sidebar-brand-name-height;
     line-height: $sidebar-brand-name-height;
     white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
     padding: 0 10px;
     background-color: $sidebar-brand-name-bg;
     border-radius: $sidebar-brand-name-height/2;
     margin-top: $spacer-sm;
+    opacity: 1;
+    visibility: visible;
+    transition: $transition-opacity;
   }
 }
 
-.va-sidebar-menu {
+.va-side-main {
+  height: 100%;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
 
+.va-side-title {
+  padding: $sidebar-menus-padding-y $sidebar-menus-padding-x;
+  font-weight: 500;
+}
+
+.va-side-menu {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  .menu-item {
+    padding: $sidebar-menus-padding-y $sidebar-menus-padding-x;
+    line-height: $sidebar-menus-line-height;
+    white-space: nowrap;
+
+    .va-icon {
+      width: $font-size-lg;
+      height: $font-size-lg;
+      vertical-align: -0.2em;
+      margin-right: $spacer-base;
+    }
+  }
 }
 
 @media screen and (min-width: $device-md) {
