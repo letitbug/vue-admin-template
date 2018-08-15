@@ -1,8 +1,8 @@
 <template>
 <div class="va-error-wrapper">
   <img :src="flag" alt=""><br>
-  <h4 style="margin: 0">Oops! 404 !!!</h4>
-  <h5>The page you want to see may have moved...</h5>
+  <h4 style="margin: 0">Oops! {{ code }} !!!</h4>
+  <h5>{{ notice[code < 500 ? code : 500] }}</h5>
   <va-copyright></va-copyright>
 </div>
 </template>
@@ -13,14 +13,24 @@ export default {
   name: 'Error',
   components: { VaCopyright },
   data() {
+    const _normalize = '瞎JB点，这回出错了吧！该！！！'
     return {
       code: 404,
-      flag: ''
+      flag: '',
+      notice: {
+        404: 'The page you want to see may have moved...',
+        403: 'You don\'t have access to this page, do you want it? I won\'t give it to you!!!',
+        402: _normalize,
+        401: 'unauthorized! This requests require authentication.',
+        400: _normalize,
+        500: 'The server broke down and threw an error code at you ...',
+      }
     }
   },
   created() {
+    this.code = this.$route.params.code
     const random = Math.floor(Math.random() * 4 + 1)
-    this.flag = require('@/assets/flags/errors/' + this.code + '-' + random + '.gif')
+    this.flag = require('@/assets/flags/errors/err-' + random + '.gif')
   }
 }
 </script>

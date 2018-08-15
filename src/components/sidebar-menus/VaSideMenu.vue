@@ -17,11 +17,13 @@
   <!-- About user guide -->
   <h6 class="va-side-title">Settings</h6>
   <ul class="va-side-menu">
-    <li><router-link to="/account" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
-      xlink:href="#if-user"></use></svg> <span class="item-name">Account</span></router-link></li>
-    <li><router-link to="/website" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
+    <li><router-link to="/error/500" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
       xlink:href="#if-handle-browse"></use></svg> <span class="item-name">Website</span></router-link></li>
-    <li><router-link to="/client" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
+    <li><router-link to="/error/403" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
+      xlink:href="#if-user"></use></svg> <span class="item-name">Account</span></router-link></li>
+    <li><router-link to="/error/402" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
+      xlink:href="#if-handle-browse"></use></svg> <span class="item-name">Rules</span></router-link></li>
+    <li><router-link to="/error/401" class="menu-item"><svg class="va-icon" aria-hidden="true"><use
       xlink:href="#if-settings"></use></svg> <span class="item-name">Client</span></router-link></li>
   </ul>
 </div>

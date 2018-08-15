@@ -1,7 +1,7 @@
 import Layout from '@/layouts/Layout'
 
 export const constantRouteMap = [
-  { path: '/error', component: () => import('@/modules/error/Error'), hidden: true },
+  { path: '/error/:code', component: () => import('@/modules/error/Error'), hidden: true },
   {
     path: '',
     component: Layout,
@@ -28,7 +28,7 @@ export const constantRouteMap = [
       { path: '', name: 'Table', component: () => import('@/modules/table/Table') }
     ]
   },
-  { path: '*', redirect: '/error', hidden: true }
+  { path: '*', redirect: '/error/404', hidden: true }
 ]
 
 export const asyncRouteMap = []
