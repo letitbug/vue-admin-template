@@ -71,26 +71,26 @@
 
 .va-side-title {
   margin-top: $sidebar-title-margin-top;
-  margin-bottom: $sidebar-title-margin-bottom;
+  margin-bottom: 0;
   padding: 0 $sidebar-title-padding-x;
   font-weight: 500;
   transition: $transition-height;
 }
 
 .va-side-menu {
+  padding: $sidebar-title-margin-bottom 0 0;
   list-style-type: none;
-  padding: 0;
   margin: 0;
 
   > li {
-    padding: 0 0 0 $sidebar-menus-padding-x;
+    padding: $sidebar-menus-space/2 0 $sidebar-menus-space/2 $sidebar-menus-padding-x;
     position: relative;
   }
 
   .menu-item {
     display: block;
     padding: 0 $sidebar-menus-link-padding-x;
-    margin: $sidebar-menus-space 0;
+    margin: 0;
     //margin-right: -$scrollbar-width;
     color: $sidebar-color;
     text-decoration: none;
