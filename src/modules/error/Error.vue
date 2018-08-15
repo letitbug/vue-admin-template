@@ -1,7 +1,8 @@
 <template>
 <div class="va-error-wrapper">
   <img :src="flag" alt=""><br>
-  Router error 404 !!!
+  <h4 style="margin: 0">Oops! 404 !!!</h4>
+  <h5>The page you want to see may have moved...</h5>
   <va-copyright></va-copyright>
 </div>
 </template>
