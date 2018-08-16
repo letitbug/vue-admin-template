@@ -33,6 +33,7 @@ $color-theme-green:     $color-green !default;
 $color-theme-blue:      $color-blue !default;
 
 $color-theme:           $color-theme-pink;
+$color-actives:         $color-cyan;
 
 $color-line:            $color-gray-300 !default;
 
@@ -125,6 +126,7 @@ $transition-timing-function:  ease-out !default;
 $transition-all:              all $transition-duration $transition-timing-function !default;
 $transition-border:           border $transition-duration $transition-timing-function !default;
 $transition-opacity:          opacity $transition-duration $transition-timing-function !default;
+$transition-visibility:       visibility $transition-duration $transition-timing-function !default;
 $transition-background:       background $transition-duration $transition-timing-function !default;
 $transition-color:            color $transition-duration $transition-timing-function !default;
 $transition-width:            width $transition-duration $transition-timing-function !default;

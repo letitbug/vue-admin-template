@@ -6,7 +6,11 @@
 
 <script>
 export default {
-  name: 'VaSideMenuItem'
+  name: 'VaSideMenuItem',
+  props: {
+    itemTitle: { type: String, required: true },
+    child: { type: Array, required: false, default: () => [] }
+  }
 }
 </script>
 

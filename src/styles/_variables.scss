@@ -10,7 +10,7 @@
 $scrollbar-width:                 6px;
 $scrollbar-bg:                    $color-gray-300;
 $scrollbar-thumb-bg:              $color-gray-400;
-$scrollbar-thumb-bg-hover:        $color-cyan;
+$scrollbar-thumb-bg-hover:        $color-actives;
 $scrollbar-thumb-radius-size:     3px;
 
 
@@ -33,6 +33,7 @@ $sidebar-brand-name-bg:           $color-indigo-light;
 $sidebar-brand-name-height:       30px;
 
 $sidebar-title-padding-x:         $spacer-xl;
+$sidebar-title-padding-r:         $spacer-lg * 2;
 $sidebar-title-margin-top:        $spacer-xxl;
 $sidebar-title-margin-bottom:     $spacer-lg;
 $sidebar-menus-padding-x:         $spacer-lg;
