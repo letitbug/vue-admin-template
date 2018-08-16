@@ -37,6 +37,10 @@ $sidebar-nav-color-hover:         $color-white;
 $sidebar-nav-color-active:        $color-cyan;
 $sidebar-nav-icon-size:           $font-size-h4;
 
+$sidebar-nav-item-height:         $sidebar-brand-name-height;
+$sidebar-nav-item-line-height:    $sidebar-nav-item-height;
+$sidebar-nav-item-padding-x-c:    ($sidebar-width-collapse - $sidebar-nav-icon-size) / 2;
+
 //
 // About head bar
 $head-border:                   $border-default;

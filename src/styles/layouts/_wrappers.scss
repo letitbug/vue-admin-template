@@ -72,6 +72,9 @@
       }
 
       .va-side-nav {
+        .va-side-nav-title, a {
+          padding: 0 $sidebar-nav-item-padding-x-c;
+        }
         .item-name, .expander-icon {
           display: none;
         }
