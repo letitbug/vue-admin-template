@@ -71,23 +71,15 @@
         padding-top: $sidebar-brand-height-collapse;
       }
 
+      .va-side-nav {
+        .item-name, .expander-icon {
+          display: none;
+        }
+      }
+
       .va-side-menu {
         > li {
           padding: 0;
-        }
-
-        .menu-item {
-          padding: 0;
-          border-radius: 0;
-          text-align: center;
-
-          .va-icon {
-            margin: 0;
-          }
-
-          .item-name {
-            display: none;
-          }
         }
       }
     }

@@ -69,89 +69,43 @@
   //-webkit-overflow-scrolling: touch;
 }
 
-.va-side-menus {
-  &.expanded {
-    .expander .expand-handler {
-      transform: rotate(90deg);
-    }
-
-    .va-side-menu {
-      height: auto;
-      opacity: 1;
-      padding-top: $sidebar-title-margin-bottom;
-    }
-  }
-}
-
-.va-side-title {
-  margin-top: $sidebar-title-margin-top;
-  margin-bottom: 0;
-  padding: 0 $sidebar-title-padding-r 0 $sidebar-title-padding-x;
-  font-weight: 500;
-  position: relative;
-  transition: $transition-color;
-
-  &.expander {
-    cursor: pointer;
-  }
-
-  .expand-handler {
-    position: absolute;
-    top: 1px;
-    right: $sidebar-title-padding-r / 2 - 7;
-    cursor: pointer;
-    transition: $transition-transform;
-  }
-
-  &:hover, &:active, .expand-handler:hover {
-    color: $color-actives;
-  }
-}
-
-.va-side-menu {
-  overflow: hidden;
-  padding: 0;
-  list-style-type: none;
-  margin: 0;
-  height: 0;
-  opacity: 0;
-  transition: $transition-opacity;
-
-  > li {
-    padding: $sidebar-menus-space/2 0 $sidebar-menus-space/2 $sidebar-menus-padding-x;
-    position: relative;
-  }
-
-  .menu-item {
-    display: block;
-    padding: 0 $sidebar-menus-link-padding-x;
-    margin: 0;
-    //margin-right: -$scrollbar-width;
-    color: $sidebar-color;
+.va-side-nav {
+  .va-side-nav-title, a {
     text-decoration: none;
-    line-height: $sidebar-menus-line-height;
-    border-top-left-radius: $sidebar-menus-line-height/2;
-    border-bottom-left-radius: $sidebar-menus-line-height/2;
+    color: $sidebar-nav-color;
+    cursor: pointer;
     white-space: nowrap;
+    overflow: hidden;
 
     &:hover {
-      color: $sidebar-color-active;
-    }
-
-    &.active {
-      background-color: $sidebar-menus-link-active-bg;
-
-      .va-icon {
-        color: $color-actives;
-      }
+      color: $sidebar-nav-color-hover;
     }
 
     .va-icon {
-      width: $font-size-lg;
-      height: $font-size-lg;
-      vertical-align: -0.2em;
-      margin-right: $spacer-base;
+      width: $sidebar-nav-icon-size;
+      height: $sidebar-nav-icon-size;
+      vertical-align: -0.16em;
     }
+  }
+
+  .va-side-nav-title {
+    font-size: $font-size-h6;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}
+
+.va-side-nav-title {
+
+}
+
+.va-side-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  .menu-item {
+    text-transform: capitalize;
   }
 }
 
