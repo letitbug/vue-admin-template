@@ -2,7 +2,7 @@
   <div class="va-sidebar">
     <div class="va-side-brand">
       <img class="brand-logo" :src="logo" alt="">
-      <div class="brand-name">vava mini</div>
+      <span class="brand-name">vava mini</span>
     </div>
     <va-side-menu></va-side-menu>
   </div>

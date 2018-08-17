@@ -23,16 +23,12 @@ $sidebar-bg-image:                linear-gradient($color-indigo-dark , $color-in
 $sidebar-color:                   $color-gray-300;
 $sidebar-color-active:            $color-white;
 
-$sidebar-brand-height-expanded:   120px;
-$sidebar-brand-height-collapse:   50px;
-$sidebar-brand-padding-default:   $spacer-sm $spacer-lg;
-$sidebar-brand-padding-collapsed: $spacer-xxs $spacer-sm;
-$sidebar-brand-size-default:      56px;
-$sidebar-brand-size-collapse:     40px;
-$sidebar-brand-name-bg:           $color-indigo-light;
-$sidebar-brand-name-height:       30px;
+$sidebar-brand-height:            50px;
+//$sidebar-brand-padding-default:   $spacer-sm $spacer-lg;
+$sidebar-brand-padding:           $spacer-xxs $spacer-sm;
+$sidebar-brand-size:              40px;
 
-//$sidebar-nav-expanded-bg:         $color-indigo-darken;
+$sidebar-nav-expanded-bg:         $color-indigo-darken;
 $sidebar-nav-color:               $color-gray-400;
 $sidebar-nav-color-hover:         $color-white;
 $sidebar-nav-color-active:        $color-cyan;
@@ -47,7 +43,7 @@ $sidebar-nav-link-padding-x:      $spacer-lg;
 //
 // About head bar
 $head-border:                   $border-default;
-$head-height:                   $sidebar-brand-height-collapse;
+$head-height:                   $sidebar-brand-height;
 $head-line-height:              $head-height - $border-default-width;
 $head-bg-color:                 $color-white;
 

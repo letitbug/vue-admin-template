@@ -2,7 +2,7 @@
   height: 100%;
   overflow: hidden;
   color: $sidebar-color;
-  padding-top: $sidebar-brand-height-expanded;
+  padding-top: $sidebar-brand-height;
   background-color: $sidebar-bg-color;
   background-image: $sidebar-bg-image;
 
@@ -29,11 +29,14 @@
 }
 
 .va-side-brand {
-  height: $sidebar-brand-height-expanded;
-  padding: $sidebar-brand-padding-default;
+  height: $sidebar-brand-height;
+  line-height: $sidebar-brand-size;
+  padding: $sidebar-brand-padding;
   overflow: hidden;
   text-align: center;
   font-size: $font-size-h5;
+  white-space: nowrap;
+  overflow: hidden;
   position: absolute;
   top: 0;
   left: 0;
@@ -41,20 +44,16 @@
   transition: $transition-padding, $transition-height;
 
   .brand-logo {
-    width: $sidebar-brand-size-default;
-    height: $sidebar-brand-size-default;
+    width: $sidebar-brand-size;
+    height: $sidebar-brand-size;
     transition: $transition-width, $transition-height;
   }
 
   .brand-name {
-    height: $sidebar-brand-name-height;
-    line-height: $sidebar-brand-name-height;
+    display: inline-block;
+    vertical-align: top;
     white-space: nowrap;
     overflow: hidden;
-    padding: 0 10px;
-    background-color: $sidebar-brand-name-bg;
-    border-radius: $sidebar-brand-name-height/2;
-    margin-top: $spacer-sm;
   }
 }
 
@@ -72,16 +71,17 @@
     display: block;
     padding-left: $sidebar-nav-link-padding-x;
     padding-right: $sidebar-nav-link-padding-x;
+    border-left: solid 3px transparent;
     text-decoration: none;
     color: $sidebar-nav-color;
     cursor: pointer;
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    transition: $transition-padding, $transition-color, $transition-background;
+    transition: $transition-padding, $transition-color, $transition-background, $transition-border;
 
     &:hover {
-      color: $sidebar-nav-color-hover;
+      border-left-color: $border-color-active;
     }
 
     .va-icon {
@@ -107,6 +107,7 @@
       right: $sidebar-nav-link-padding-x - 7px;
       transition: $transition-transform;
     }
+
   }
 
   .nav-category {
@@ -120,15 +121,18 @@
       height: $sidebar-nav-item-height;
       line-height: $sidebar-nav-item-line-height;
 
+      &:hover, &.active {
+        color: $sidebar-nav-color-active;
+      }
+
       &.active {
         background-color: $color-indigo-darkness;
-        color: $sidebar-nav-color-active;
       }
     }
   }
 
   &.expanded {
-    //background-color: $sidebar-nav-expanded-bg;
+    background-color: $sidebar-nav-expanded-bg;
 
     .nav-title .expander-icon {
       transform: rotate(90deg);
@@ -154,13 +158,7 @@
       }
 
       .va-side-brand{
-        padding: $sidebar-brand-padding-collapsed;
-        height: $sidebar-brand-height-collapse;
-
-        .brand-logo {
-          width: $sidebar-brand-size-collapse;
-          height: $sidebar-brand-size-collapse;
-        }
+        //padding: $sidebar-brand-padding-collapsed;
       }
 
       .va-side-nav .item-name, .expander-icon {

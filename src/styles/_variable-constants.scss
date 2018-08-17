@@ -80,9 +80,10 @@ $device-xl:           1200px !default;
 
 // Lines, Borders
 $border-default-width:      1px !default;
-
-$border-default:            solid $border-default-width $color-line !default;
-$border-actived:            solid $border-default-width $color-theme !default;
+$border-color:              $color-line !default;
+$border-color-active:       $color-theme !default;
+$border-default:            solid $border-default-width $border-color !default;
+$border-actived:            solid $border-default-width $border-color-active !default;
 
 
 // Z-index
