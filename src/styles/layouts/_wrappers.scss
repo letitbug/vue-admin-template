@@ -51,44 +51,16 @@
         margin-left: $sidebar-width-collapse;
       }
 
-      .va-side-brand{
-        padding: $sidebar-brand-padding-collapsed;
-        height: $sidebar-brand-height-collapse;
-
-        .brand-logo {
-          width: $sidebar-brand-size-collapse;
-          height: $sidebar-brand-size-collapse;
-        }
-
-        .brand-name {
-          visibility: hidden;
-          opacity: 0;
-        }
-      }
-
       .va-sidebar {
         width: $sidebar-width-collapse;
         padding-top: $sidebar-brand-height-collapse;
-      }
-
-      .va-side-nav {
-        .va-side-nav-title, a {
-          padding: 0 $sidebar-nav-item-padding-x-c;
-        }
-        .item-name, .expander-icon {
-          display: none;
-        }
-      }
-
-      .va-side-menu {
-        > li {
-          padding: 0;
-        }
       }
     }
   }
 }
 
+//
+// In mobile
 @media screen and (max-width: $device-md) {
   .va-app-wrapper {
     .va-sidebar {
@@ -105,10 +77,6 @@
       .va-main-wrapper {
         transform: translate($sidebar-width-expanded/2, 0);
       }
-      .va-side-backdrop {
-        visibility: visible;
-        opacity: 1;
-      }
     }
 
     &.sidebar-collapse {
@@ -117,10 +85,6 @@
       }
       .va-main-wrapper {
         transform: translate(0, 0);
-      }
-      .va-side-backdrop {
-        visibility: hidden;
-        opacity: 0;
       }
     }
   }
