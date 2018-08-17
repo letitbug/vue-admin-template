@@ -78,7 +78,7 @@
     white-space: nowrap;
     overflow: hidden;
     position: relative;
-    transition: $transition-padding;
+    transition: $transition-padding, $transition-color, $transition-background;
 
     &:hover {
       color: $sidebar-nav-color-hover;
