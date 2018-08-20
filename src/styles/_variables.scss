@@ -28,17 +28,16 @@ $sidebar-brand-height:            50px;
 $sidebar-brand-padding:           $spacer-xxs $spacer-sm;
 $sidebar-brand-size:              40px;
 
-$sidebar-nav-expanded-bg:         $color-indigo-darken;
+$sidebar-nav-expanded-bg:         $color-indigo-darkness;
 $sidebar-nav-color:               $color-gray-400;
 $sidebar-nav-color-hover:         $color-white;
 $sidebar-nav-color-active:        $color-cyan;
 $sidebar-nav-icon-size:           $font-size-h4;
 
-$sidebar-nav-title-height:        50px;
-$sidebar-nav-title-line-height:   $sidebar-nav-title-height;
-$sidebar-nav-item-height:         $sidebar-nav-title-height;
-$sidebar-nav-item-line-height:    $sidebar-nav-item-height;
-$sidebar-nav-link-padding-x:      $spacer-lg;
+$sidebar-nav-link-height:            50px;
+$sidebar-nav-link-line-height:       $sidebar-nav-link-height;
+$sidebar-nav-link-border-left-width:  3px;
+$sidebar-nav-link-padding-x:          $spacer-lg;
 
 //
 // About head bar

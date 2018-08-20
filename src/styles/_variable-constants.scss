@@ -132,6 +132,7 @@ $transition-background:       background $transition-duration $transition-timing
 $transition-color:            color $transition-duration $transition-timing-function !default;
 $transition-width:            width $transition-duration $transition-timing-function !default;
 $transition-height:           height $transition-duration $transition-timing-function !default;
+$transition-max-height:       max-height $transition-duration $transition-timing-function !default;
 $transition-margin:           margin $transition-duration $transition-timing-function !default;
 $transition-padding:          padding $transition-duration $transition-timing-function !default;
 $transition-position-left:    left $transition-duration $transition-timing-function !default;
