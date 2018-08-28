@@ -2,7 +2,7 @@
 <div class="va-error-wrapper">
   <img :src="flag" alt=""><br>
   <h4 style="margin: 0">Oops! {{ code }} !!!</h4>
-  <h5>{{ notice['err' + code] }}</h5>
+  <h5>{{ notice }}</h5>
   <va-copyright></va-copyright>
 </div>
 </template>
@@ -13,11 +13,22 @@ export default {
   name: 'Error',
   components: { VaCopyright },
   data() {
-    const _normalize = '瞎JB点，这回出错了吧！该！！！'
     return {
       code: 404,
       flag: '',
-      notice: {
+      notice: ''
+    }
+  },
+  created() {
+    this.code = this.$route.params.code
+    const random = Math.floor(Math.random() * 4 + 1)
+    this.flag = require('@/assets/flags/errors/err-' + random + '.gif')
+    this.convertNotice()
+  },
+  methods: {
+    convertNotice() {
+      const _normalize = '瞎JB点，这回出错了吧！该！！！'
+      const notices = {
         err404: 'The page you want to see may have moved...',
         err403: 'You don\'t have access to this page, do you want it? I won\'t give it to you!!!',
         err402: _normalize,
@@ -25,12 +36,8 @@ export default {
         err400: _normalize,
         err500: 'The server broke down and threw an error code at you ...',
       }
+      this.notice = notices['err' + this.code]
     }
-  },
-  created() {
-    this.code = this.$route.params.code
-    const random = Math.floor(Math.random() * 4 + 1)
-    this.flag = require('@/assets/flags/errors/err-' + random + '.gif')
   }
 }
 </script>
