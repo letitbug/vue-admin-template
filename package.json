@@ -1,12 +1,8 @@
 {
-  "name": "vue-cli-template-webpack",
-  "version": "1.3.1",
+  "name": "vue-cli-template-vava-mini",
+  "version": "1.0.0",
   "license": "MIT",
-  "description": "A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.",
-  "scripts": {
-    "docs": "cd docs && gitbook serve",
-    "docs:deploy": "bash ./deploy-docs.sh"
-  },
+  "description": "A vue-cli template based on 'vuejs-templates/webpack'.",
   "devDependencies": {
     "vue-cli": "^2.9.6"
   }
