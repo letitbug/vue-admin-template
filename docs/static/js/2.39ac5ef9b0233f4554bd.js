@@ -1,2 +1,0 @@
-webpackJsonp([2],{SwpK:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var s={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"va-body-container"},[this._v("\n  Tables\n")])},staticRenderFns:[]},a=t("VU/8")({name:"Table"},s,!1,null,null,null);n.default=a.exports}});
-//# sourceMappingURL=2.39ac5ef9b0233f4554bd.js.map
