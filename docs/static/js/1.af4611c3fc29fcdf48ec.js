@@ -1,0 +1,2 @@
+webpackJsonp([1],{BSkT:function(e,t,n){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"va-body-container no-bg"},[this._v("\r\n  Reports\r\n")])},staticRenderFns:[]};var r=n("VU/8")({name:"Reports"},a,!1,function(e){n("Uyva")},"data-v-9e649aac",null);t.default=r.exports},Uyva:function(e,t){}});
+//# sourceMappingURL=1.af4611c3fc29fcdf48ec.js.map
