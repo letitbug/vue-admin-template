@@ -7,7 +7,7 @@
       <svg class="va-icon" aria-hidden="true"><use xlink:href="#if-home"></use></svg> <span class="item-name">main</span>
       <i class="el-icon-arrow-right expander-icon"></i>
     </a>
-    <ul class="nav-category">
+    <ul class="nav-dropdown">
       <li><router-link to="/dashboard" class="nav-item"><svg class="va-icon" aria-hidden="true"><use
         xlink:href="#if-dashboard"></use></svg> <span class="item-name">dashboard</span></router-link></li>
       <li><router-link to="/report" class="nav-item"><svg class="va-icon" aria-hidden="true"><use
@@ -24,7 +24,7 @@
     <a class="nav-title expander" @click.stop.prevent="expandMenu(2)">
       <svg class="va-icon" aria-hidden="true"><use xlink:href="#if-settings"></use></svg> <span class="item-name">settings</span>
       <i class="el-icon-arrow-right expander-icon"></i></a>
-    <ul class="nav-category">
+    <ul class="nav-dropdown">
       <li><router-link to="/error/500" class="nav-item"><svg class="va-icon" aria-hidden="true"><use
         xlink:href="#if-handle-browse"></use></svg> <span class="item-name">website</span></router-link></li>
       <li><router-link to="/error/403" class="nav-item"><svg class="va-icon" aria-hidden="true"><use

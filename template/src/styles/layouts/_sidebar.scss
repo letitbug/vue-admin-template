@@ -1,10 +1,7 @@
 .va-sidebar {
   height: 100%;
-  //overflow: hidden;
-  color: $sidebar-color;
   padding-top: $sidebar-brand-height;
   background-color: $sidebar-bg-color;
-  //background-image: $sidebar-bg-image;
 
   position: absolute;
   z-index: $z-index-sidebar;
@@ -13,6 +10,11 @@
   bottom: 0;
 
   transition: $transition-width, $transition-padding, $transition-transform;
+
+  &, & a {
+    color: $sidebar-color;
+    text-decoration: none;
+  }
 }
 
 .va-side-backdrop {
@@ -30,9 +32,9 @@
 
 .va-side-brand {
   height: $sidebar-brand-height;
-  line-height: $sidebar-brand-size;
-  padding: $sidebar-brand-padding;
-  font-size: $font-size-h5;
+  line-height: $sidebar-brand-line-height;
+  padding: $sidebar-brand-padding-y $sidebar-brand-padding-x;
+  font-size: $sidebar-brand-font-size;
   text-align: center;
   overflow: hidden;
   white-space: nowrap;
@@ -42,25 +44,22 @@
   right: 0;
   transition: $transition-padding, $transition-height;
 
-  .brand-logo {
-    width: $sidebar-brand-size;
-    height: $sidebar-brand-size;
-    transition: $transition-width, $transition-height;
-  }
-
   .brand-name {
     display: inline-block;
     vertical-align: top;
     white-space: nowrap;
     overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 300;
+
+    > strong {
+      font-weight: 500;
+    }
   }
 }
 
 .va-side-main {
   height: 100%;
-  //overflow-x: hidden;
-  //overflow-y: scroll;
-  //-webkit-overflow-scrolling: touch;
 }
 
 @media screen and (min-width: $device-md) {

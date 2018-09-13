@@ -12,6 +12,8 @@ import App from './App'
 import router from './router'
 import store from './store'
 
+import '@/assets/icons'
+
 Vue.config.productionTip = false
 
 Vue.use(Element)

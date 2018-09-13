@@ -1,0 +1,12 @@
+.va-side-nav {
+  font-size: $sidebar-nav-icon-size;
+
+  .item-name {
+    text-transform: capitalize;
+    font-size: 1rem;
+  }
+
+  .nav-dropdown {
+    list-style-type: none;
+  }
+}

@@ -1,31 +1,27 @@
 // Colors
 $color-white:         #ffffff !default;
-$color-gray-100:      #f8f9fa !default;
-$color-gray-200:      #e9ecef !default;
+$color-gray-100:      #f0f4f6 !default;
+$color-gray-200:      #e6edf1 !default;
 $color-gray-300:      #dee2e6 !default;
 $color-gray-400:      #ced4da !default;
 $color-gray-500:      #adb5bd !default;
 $color-gray-600:      #6c757d !default;
 $color-gray-700:      #495057 !default;
 $color-gray-800:      #343a40 !default;
-$color-gray-900:      #212529 !default;
+$color-gray-900:      #252834 !default;
+$color-gray-1000:     #1c1f27 !default;
 $color-black:         #000000 !default;
 
 $color-blue:          #007bff !default;
 $color-indigo:        #6610f2 !default;
 $color-purple:        #6f42c1 !default;
 $color-red:           #dc3545 !default;
-$color-pink:          #f73f75 !default;
+$color-pink:          #d90378 !default;
 $color-orange:        #fe613c !default;
 $color-yellow:        #ffc107 !default;
 $color-green:         #28a745 !default;
 $color-teal:          #20c997 !default;
-$color-cyan:          #00bdff !default;
-
-$color-indigo-light:    #3e4368 !default;
-$color-indigo-dark:     #363a5d !default;
-$color-indigo-darken:   #312952 !default;
-$color-indigo-darkness: #2a2c44 !default;
+$color-cyan:          #4ec1fa !default;
 
 // Theme colors
 $color-theme-pink:      $color-pink !default;
