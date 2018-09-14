@@ -72,14 +72,6 @@
     &.sidebar-collapse {
       .va-sidebar:hover {
         width: $sidebar-width-expanded;
-
-        .va-side-brand .brand-name {
-          visibility: visible;
-        }
-      }
-
-      .va-side-brand .brand-name {
-        visibility: hidden;
       }
     }
   }
