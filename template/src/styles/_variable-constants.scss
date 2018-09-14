@@ -1,6 +1,6 @@
 // Colors
 $color-white:         #ffffff !default;
-$color-gray-100:      #f0f4f6 !default;
+$color-gray-100:      #f6f7fb !default;
 $color-gray-200:      #e6edf1 !default;
 $color-gray-300:      #dee2e6 !default;
 $color-gray-400:      #ced4da !default;
@@ -29,7 +29,7 @@ $color-theme-green:     $color-green !default;
 $color-theme-blue:      $color-cyan !default;
 
 $color-theme:           $color-theme-blue;
-$color-line:            $color-gray-300 !default;
+$color-line:            $color-gray-200 !default;
 
 $color-text-primary:    $color-gray-800;
 $color-text-secondary:  $color-gray-600;
@@ -99,21 +99,24 @@ $z-index-editors:           135!default;
 // Shadows
 $shadow-color-base:         rgba(0, 0, 0, .075) !default;
 
-$shadow-sm-offset:          .1rem!default;
-$shadow-sm-size:            .2rem!default;
+$shadow-sm-offset:          1px!default;
+$shadow-sm-distance:        3px!default;
+$shadow-sm-size:            0!default;
 
-$shadow-base-offset:        .2rem!default;
-$shadow-base-size:          .4rem!default;
+$shadow-base-offset:        2px!default;
+$shadow-base-distance:      5px!default;
+$shadow-base-size:          0!default;
 
-$shadow-lg-offset:          .3rem!default;
-$shadow-lg-size:            .6rem!default;
+$shadow-lg-offset:          4px!default;
+$shadow-lg-distance:        8px!default;
+$shadow-lg-size:            0!default;
 
 // vertical shadows
-$shadow-sm-vr:              0 $shadow-sm-offset $shadow-sm-size $shadow-color-base;
-$shadow-sm-vr-inverse:      0 (-$shadow-sm-offset) $shadow-sm-size $shadow-color-base;
+$shadow-sm-vr:              0 $shadow-sm-offset $shadow-sm-distance $shadow-sm-size $shadow-color-base;
+$shadow-sm-vr-inverse:      0 (-$shadow-sm-offset) $shadow-sm-distance $shadow-sm-size $shadow-color-base;
 // horizontal shadows
-$shadow-sm-hr:              $shadow-sm-offset 0 $shadow-sm-size $shadow-color-base;
-$shadow-sm-hr-inverse:      (-$shadow-sm-offset) 0 $shadow-sm-size $shadow-color-base;
+$shadow-sm-hr:              $shadow-sm-offset 0 $shadow-sm-distance $shadow-sm-size $shadow-color-base;
+$shadow-sm-hr-inverse:      (-$shadow-sm-offset) 0 $shadow-sm-distance $shadow-sm-size $shadow-color-base;
 
 
 // Transitions
