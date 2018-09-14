@@ -26,19 +26,19 @@
     height: $sidebar-nav-link-height;
     line-height: $sidebar-nav-link-line-height;
     padding: 0 $sidebar-nav-link-padding-x;
-    border-left: solid $sidebar-nav-link-border-left-width transparent;
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
     position: relative;
+    transition: $transition-color;
 
     &.active {
       color: $sidebar-color-active;
-      border-left-color: $sidebar-nav-link-border-color;
+      cursor: default;
     }
 
-    &:hover {
-      border-left-color: $sidebar-nav-link-border-color;
+    &:not(.active):hover {
+      color: $sidebar-color-focus;
     }
   }
 

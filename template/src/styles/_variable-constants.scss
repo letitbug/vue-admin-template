@@ -26,16 +26,16 @@ $color-cyan:          #4ec1fa !default;
 // Theme colors
 $color-theme-pink:      $color-pink !default;
 $color-theme-green:     $color-green !default;
-$color-theme-blue:      $color-blue !default;
+$color-theme-blue:      $color-cyan !default;
 
-$color-theme:           $color-theme-pink;
-$color-actives:         $color-cyan;
-
+$color-theme:           $color-theme-blue;
 $color-line:            $color-gray-300 !default;
 
-$color-link:            $color-blue;
 $color-text-primary:    $color-gray-800;
 $color-text-secondary:  $color-gray-600;
+$color-link:            $color-blue;
+
+$color-actives:         $color-theme;
 
 $color-overlay:         rgba($color-black, .3) !default;
 

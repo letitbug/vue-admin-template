@@ -3,6 +3,10 @@
   <img :src="flag" alt=""><br>
   <h4 style="margin: 0">Oops! {{ code }} !!!</h4>
   <h5>{{ notice }}</h5>
+  <p>
+    <a class="linker" @click.prevent.stop="$router.go(-1)" href="/">BACK</a>
+    <router-link class="linker" to="/">HOME</router-link>
+  </p>
   <va-copyright></va-copyright>
 </div>
 </template>
@@ -60,6 +64,10 @@ export default {
     bottom: $spacer-base;
     left: 0;
     right: 0;
+  }
+
+  .linker {
+    margin: 0 $spacer-base;
   }
 }
 </style>
