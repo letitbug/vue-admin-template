@@ -1,2 +1,0 @@
-webpackJsonp([3],{Cka3:function(e,n,t){"use strict";Object.defineProperty(n,"__esModule",{value:!0});var a={render:function(){var e=this.$createElement;return(this._self._c||e)("div",{staticClass:"va-body-container no-bg"},[this._v("\r\n  Dashboard\r\n")])},staticRenderFns:[]},r=t("VU/8")({name:"Dashboard"},a,!1,null,null,null);n.default=r.exports}});
-//# sourceMappingURL=3.837ab83bd53284a8f627.js.map
