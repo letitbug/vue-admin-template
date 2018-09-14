@@ -54,6 +54,8 @@ h6 { font-size: $font-size-h6 }
 a {
   color: $color-gray-600;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+  outline:none;
 
   &:hover {
     color: $color-actives;
