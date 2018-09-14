@@ -1,5 +1,6 @@
 .va-side-nav {
   font-size: $sidebar-nav-icon-size;
+  transition: $transition-background;
 
   .va-icon {
     vertical-align: -0.2em;
@@ -13,6 +14,11 @@
 
   .expander-icon {
     font-size: 12px;
+    position: absolute;
+    right: $sidebar-nav-link-padding-x;
+    top: ($sidebar-nav-link-height - 8) / 2;
+
+    transition: $transition-transform;
   }
 
   .nav-title, .nav-item {
@@ -20,18 +26,19 @@
     height: $sidebar-nav-link-height;
     line-height: $sidebar-nav-link-line-height;
     padding: 0 $sidebar-nav-link-padding-x;
+    border-left: solid $sidebar-nav-link-border-left-width transparent;
     cursor: pointer;
     user-select: none;
+    white-space: nowrap;
     position: relative;
-
-    .expander-icon {
-      position: absolute;
-      right: $sidebar-nav-link-padding-x;
-      top: ($sidebar-nav-link-height - 8) / 2;
-    }
 
     &.active {
       color: $sidebar-color-active;
+      border-left-color: $sidebar-nav-link-border-color;
+    }
+
+    &:hover {
+      border-left-color: $sidebar-nav-link-border-color;
     }
   }
 
@@ -39,5 +46,21 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: $transition-max-height;
+  }
+
+  &.expanded {
+    background-color: $sidebar-nav-expanded-bg;
+
+    .expander-icon {
+      transform: rotate(90deg);
+    }
+
+    .nav-dropdown {
+      max-height: 1000px;
+    }
   }
 }
