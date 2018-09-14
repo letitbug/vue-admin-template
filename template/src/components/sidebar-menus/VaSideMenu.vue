@@ -65,6 +65,9 @@ export default {
     expandMenu(id) {
       this.$refs['menu' + id].classList.toggle('expanded')
     }
+    // TODO Add current route styles '.active' to first level menu.
+    // TODO create close & open function with side-menu.
+    // TODO Automatically open or close the side menu bar When router changed.
   }
 }
 </script>
