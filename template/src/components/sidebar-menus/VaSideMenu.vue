@@ -45,6 +45,12 @@
       <va-icon icon="others"></va-icon> <span class="item-name">others</span>
     </router-link>
   </div>
+
+  <div class="va-side-nav fixed-bottom">
+    <router-link class="nav-title" to="/settings">
+      <va-icon icon="setting"></va-icon> <span class="item-name">Settings</span>
+    </router-link>
+  </div>
 </div>
 </template>
 
