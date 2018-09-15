@@ -1,7 +1,7 @@
 {
   "name": "vue-admin-template",
   "version": "1.0.0",
-  "description": "A admin template based on vue2 and element-ui.",
+  "description": "A magical vue admin template, based on vue@2.5.2 & element-ui@2.4.5",
   "author": "ggboom | <724939933@qq.com> | <xman724939995@gmail.com>",
   "private": true,
   "scripts": {
