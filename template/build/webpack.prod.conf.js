@@ -10,6 +10,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 const OptimizeCSSPlugin = require('optimize-css-assets-webpack-plugin')
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const meta = require('./meta')
 
 const env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
@@ -70,6 +71,7 @@ const webpackConfig = merge(baseWebpackConfig, {
       inject: true,
       favicon: path.resolve(__dirname, '../favicon.ico'),
       title: 'vava-mini',
+      meta: meta,
       minify: {
         removeComments: true,
         collapseWhitespace: true,
