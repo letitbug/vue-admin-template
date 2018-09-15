@@ -20,13 +20,13 @@
       <i class="el-icon-arrow-right expander-icon"></i>
     </a>
     <ul class="nav-dropdown child-count-3">
-      <li><router-link to="/error/500" class="nav-item">
+      <li><router-link to="/website" class="nav-item">
         <va-icon icon="browser"></va-icon> <span class="item-name">website</span>
       </router-link></li>
-      <li><router-link to="/error/403" class="nav-item">
+      <li><router-link to="/account" class="nav-item">
         <va-icon icon="user"></va-icon> <span class="item-name">account</span>
       </router-link></li>
-      <li><router-link to="/error/402" class="nav-item">
+      <li><router-link to="/permission" class="nav-item">
         <va-icon icon="handle-permission"></va-icon> <span class="item-name">Permission</span>
       </router-link></li>
     </ul>
@@ -39,7 +39,7 @@
   </div>
 
   <div class="va-side-nav fixed-bottom">
-    <router-link class="nav-title" to="/settings">
+    <router-link class="nav-title" to="/error/402">
       <va-icon icon="settings"></va-icon> <span class="item-name">Settings</span>
     </router-link>
   </div>
