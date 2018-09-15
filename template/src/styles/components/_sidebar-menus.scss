@@ -46,10 +46,10 @@
     list-style-type: none;
     margin: 0;
     padding: 0;
-    max-height: 0;
+    height: 0;
     overflow: hidden;
 
-    transition: $transition-max-height;
+    transition: $transition-height;
   }
 
   &.expanded {
@@ -60,7 +60,11 @@
     }
 
     .nav-dropdown {
-      max-height: 1000px;
+      @for $i from 1 through 10 {
+        &.child-count-#{$i} {
+          height: $sidebar-nav-link-height * $i;
+        }
+      }
     }
   }
 

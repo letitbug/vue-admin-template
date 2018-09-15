@@ -24,7 +24,7 @@
       <span class="item-name">settings</span>
       <i class="el-icon-arrow-right expander-icon"></i>
     </a>
-    <ul class="nav-dropdown">
+    <ul class="nav-dropdown child-count-4">
       <li><router-link to="/error/500" class="nav-item">
         <va-icon icon="browser"></va-icon> <span class="item-name">website</span>
       </router-link></li>
