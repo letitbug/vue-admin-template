@@ -11,11 +11,6 @@
       <va-icon icon="chart"></va-icon> <span class="item-name">reports</span>
     </router-link>
   </div>
-  <div class="va-side-nav">
-    <router-link class="nav-title" to="/table">
-      <va-icon icon="table"></va-icon> <span class="item-name">tables</span>
-    </router-link>
-  </div>
 
   <!-- About user guide -->
   <div class="va-side-nav" ref="menu2">
@@ -38,25 +33,22 @@
   </div>
 
   <div class="va-side-nav">
-    <router-link class="nav-title" to="/others">
+    <router-link class="nav-title" to="/error/401">
       <va-icon icon="others"></va-icon> <span class="item-name">others</span>
     </router-link>
   </div>
 
   <div class="va-side-nav fixed-bottom">
     <router-link class="nav-title" to="/settings">
-      <va-icon icon="setting"></va-icon> <span class="item-name">Settings</span>
+      <va-icon icon="settings"></va-icon> <span class="item-name">Settings</span>
     </router-link>
   </div>
 </div>
 </template>
 
 <script>
-import VaSideMenuItem from './VaSideMenuItem'
-
 export default {
   name: 'VaSideMenu',
-  components: { VaSideMenuItem },
   computed: {},
   methods: {
     expandMenu(id) {

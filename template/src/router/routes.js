@@ -20,14 +20,6 @@ export const constantRouteMap = [
       { path: '', name: 'Reports', component: () => import('@/modules/reports/Reports') }
     ]
   },
-  {
-    path: '/table',
-    component: Layout,
-    redirect: '/table',
-    children: [
-      { path: '', name: 'Table', component: () => import('@/modules/table/Table') }
-    ]
-  },
   { path: '*', redirect: '/error/404', hidden: true }
 ]
 
