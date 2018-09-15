@@ -20,11 +20,11 @@
   <!-- About user guide -->
   <div class="va-side-nav" ref="menu2">
     <a class="nav-title expander" @click.stop.prevent="expandMenu(2)">
-      <va-icon icon="setting"></va-icon>
-      <span class="item-name">settings</span>
+      <va-icon icon="terminal"></va-icon>
+      <span class="item-name">client</span>
       <i class="el-icon-arrow-right expander-icon"></i>
     </a>
-    <ul class="nav-dropdown child-count-4">
+    <ul class="nav-dropdown child-count-3">
       <li><router-link to="/error/500" class="nav-item">
         <va-icon icon="browser"></va-icon> <span class="item-name">website</span>
       </router-link></li>
@@ -33,9 +33,6 @@
       </router-link></li>
       <li><router-link to="/error/402" class="nav-item">
         <va-icon icon="handle-permission"></va-icon> <span class="item-name">Permission</span>
-      </router-link></li>
-      <li><router-link to="/error/401" class="nav-item">
-        <va-icon icon="setting"></va-icon> <span class="item-name">client</span>
       </router-link></li>
     </ul>
   </div>
