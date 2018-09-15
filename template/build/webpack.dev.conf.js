@@ -57,7 +57,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       template: 'index.html',
       inject: true,
       favicon: path.resolve(__dirname, '../favicon.ico'),
-      title: 'Vue-admin-frame'
+      title: 'vava-mini'
     }),
     // copy custom static assets
     new CopyWebpackPlugin([
