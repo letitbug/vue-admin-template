@@ -1,30 +1,22 @@
-# vava-mini  [![Build Status](https://travis-ci.org/letsbug/vava-mini.svg?branch=master)](https://travis-ci.org/letsbug/vava-mini)
+# vue-vava-boilerplate
 
-> A minimal admin template, based on vue2 and element-ui.
+> A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-## Build Setup
+> This template is Vue 2.0 compatible.
+
+## Documentation
+
+- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
+- [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+
+## Usage
+
+This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It is recommended to use npm 3+ for a more efficient dependency tree.**
 
 ``` bash
-# install dependencies
-npm install
-
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+$ npm install -g vue-cli
+$ vue init letsbug/vava-mini my-project
+$ cd my-project
+$ npm install
+$ npm run dev
 ```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
