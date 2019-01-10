@@ -1,9 +1,0 @@
-{
-  "name": "vue-cli-template-vava-mini",
-  "version": "2.0.0",
-  "license": "MIT",
-  "description": "A vue-cli template based on 'vuejs-templates/webpack'.",
-  "devDependencies": {
-    "vue-cli": "^2.9.6"
-  }
-}
