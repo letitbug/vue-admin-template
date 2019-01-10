@@ -78,5 +78,5 @@ module.exports = {
 
   // Android
 
-  'theme-color': '#d90378'
+  'theme-color': '#28a745'
 }

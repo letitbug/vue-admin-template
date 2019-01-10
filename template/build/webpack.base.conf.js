@@ -2,9 +2,10 @@
 const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
+const { VueLoaderPlugin } = require('vue-loader')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-function resolve (dir) {
+function resolve(dir) {
   return path.join(__dirname, '..', dir)
 }
 
@@ -22,8 +23,7 @@ const createLintingRule = () => ({
 module.exports = {
   context: path.resolve(__dirname, '../'),
   entry: {
-    // babel-polyfill
-    app: ['babel-polyfill', './src/main.js']
+    app: './src/main.js'
   },
   output: {
     path: config.build.assetsRoot,
@@ -36,7 +36,7 @@ module.exports = {
     extensions: ['.js', '.vue', '.json'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
+      '@': resolve('src')
     }
   },
   module: {
@@ -49,13 +49,18 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader',
-        include: [resolve('src'), resolve('test'), resolve('node_modules/webpack-dev-server/client')]
+        loader: 'babel-loader?cacheDirectory',
+        include: [
+          resolve('src')
+        ]
       },
       {
         test: /\.svg$/,
         loader: 'svg-sprite-loader',
-        include: [resolve('src/assets/icons')],
+        include: [
+          resolve('src/assets/icons'),
+          resolve('src/assets/svgs')
+        ],
         options: {
           symbolId: 'icon-[name]'
         }
@@ -63,10 +68,13 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg)(\?.*)?$/,
         loader: 'url-loader',
-        exclude: [resolve('src/assets/icons')],
+        exclude: [
+          resolve('src/assets/icons'),
+          resolve('src/assets/svgs')
+        ],
         options: {
           limit: 10000,
-          name: utils.assetsPath('img/[name].[hash:7].[ext]')
+          name: utils.assetsPath('images/[name].[hash:7].[ext]')
         }
       },
       {
@@ -87,6 +95,7 @@ module.exports = {
       }
     ]
   },
+  plugins: [new VueLoaderPlugin()],
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
     // source contains it (although only uses it if it's native).

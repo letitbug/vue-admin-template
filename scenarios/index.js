@@ -1,6 +1,6 @@
 const scenarios = [
-  'full', 
-  'full-karma-airbnb', 
+  'full',
+  'full-karma-airbnb',
   'minimal'
 ]
 

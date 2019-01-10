@@ -1,7 +1,7 @@
 <template>
-<svg class="va-icon" aria-hidden="true">
-  <use :xlink:href="iconName"></use>
-</svg>
+  <svg class="va-icon" aria-hidden="true">
+    <use :xlink:href="iconName"></use>
+  </svg>
 </template>
 
 <script>
@@ -17,7 +17,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

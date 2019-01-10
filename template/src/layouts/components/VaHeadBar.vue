@@ -2,7 +2,7 @@
   <div class="va-head-bar">
     <ul class="va-head-nav">
       <li class="va-nav-item" @click.stop="toggleSidebar">
-        <va-icon :icon="sidebarOpend ? 'handle-collapse' : 'handle-expand'"></va-icon>
+        <va-icon :icon="sidebarOpend ? 'handle-collapse' : 'handle-expand'" />
       </li>
     </ul>
   </div>

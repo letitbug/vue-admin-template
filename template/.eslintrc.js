@@ -11,33 +11,35 @@ module.exports = {
     node: true,
     es6: true
   },
-  extends: [
-    'eslint:recommended',
-    // https://github.com/vuejs/eslint-plugin-vue#priority-a-essential-error-prevention
-    // consider switching to `plugin:vue/strongly-recommended` or `plugin:vue/recommended` for stricter rules.
-    'plugin:vue/essential',
-    // https://github.com/standard/standard/blob/master/docs/RULES-en.md
-    // 'airbnb-base'
-    'standard'
-  ],
-  // required to lint *.vue files
-  plugins: [
-    'vue',
-    'html'
-  ],
-  // check if imports actually resolve
-  settings: {
-    'import/resolver': {
-      webpack: {
-        config: 'build/webpack.base.conf.js'
-      }
-    }
-  },
+  extends: ['eslint:recommended', 'plugin:vue/recommended'],
   // add your custom rules here
   rules: {
-    'max-len': [2, 120, 4, { 'ignoreUrls': true }],
+    // About vue settings
+    'vue/max-attributes-per-line': [2, {
+      'singleline': 10,
+      'multiline': {
+        'max': 4,
+        'allowFirstLine': false
+      }
+    }],
+    'vue/name-property-casing': ['error', 'PascalCase'],
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'always',
+        'normal': 'any',
+        'component': 'always'
+      },
+      'svg': 'any',
+      'math': 'always'
+    }],
+    'vue/html-closing-bracket-newline': ['error', {
+      'singleline': 'never',
+      'multiline': 'always'
+    }],
+    'vue/no-v-html': 'off',
+    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
+    'vue/singleline-html-element-content-newline': 'off',
     'accessor-pairs': 2,
-    'array-bracket-spacing': [2, 'never'],
     'arrow-spacing': [2, {
       'before': true,
       'after': true
@@ -167,9 +169,6 @@ module.exports = {
     'one-var': [2, {
       'initialized': 'never'
     }],
-    'object-curly-spacing': [2, 'always', {
-      objectsInObjects: false
-    }],
     'operator-linebreak': [2, 'after', {
       'overrides': {
         '?': 'before',
@@ -204,7 +203,10 @@ module.exports = {
     'yield-star-spacing': [2, 'both'],
     'yoda': [2, 'never'],
     'prefer-const': 2,
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
+    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
+    'object-curly-spacing': [2, 'always', {
+      objectsInObjects: false
+    }],
+    'array-bracket-spacing': [2, 'never']
   }
 }

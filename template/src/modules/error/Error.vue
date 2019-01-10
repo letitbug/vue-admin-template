@@ -1,14 +1,14 @@
 <template>
-<div class="va-error-wrapper">
-  <img :src="flag" alt=""><br>
-  <h4 style="margin: 0">Oops! {{ code }} !!!</h4>
-  <h5>{{ notice }}</h5>
-  <p>
-    <a class="linker" @click.prevent.stop="$router.go(-1)" href="/">BACK</a>
-    <router-link class="linker" to="/">HOME</router-link>
-  </p>
-  <va-copyright></va-copyright>
-</div>
+  <div class="va-error-wrapper">
+    <img :src="flag" alt="" /><br />
+    <h4 style="margin: 0">Oops! {{ code }} !!!</h4>
+    <h5>{{ notice }}</h5>
+    <p>
+      <a class="linker" href="/" @click.prevent.stop="$router.go(-1)">BACK</a>
+      <router-link class="linker" to="/">HOME</router-link>
+    </p>
+    <va-copyright />
+  </div>
 </template>
 
 <script>
@@ -38,7 +38,7 @@ export default {
         err402: _normalize,
         err401: 'unauthorized! This requests require authentication.',
         err400: _normalize,
-        err500: 'The server broke down and threw an error code at you ...',
+        err500: 'The server broke down and threw an error code at you ...'
       }
       this.notice = notices['err' + this.code]
     }

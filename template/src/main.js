@@ -2,10 +2,12 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 
-import Element from 'element-ui'
 import 'normalize.css'
+
+import Element from 'element-ui'
 import '@/styles/element-reboot.scss'
 import 'element-ui/lib/theme-chalk/display.css'
+
 import '@/styles/va.core.scss'
 
 import App from './App'
